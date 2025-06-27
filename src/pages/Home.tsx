@@ -4,11 +4,10 @@ import MenuDesktop  from '../components/MenuDesktop.tsx';
 import SliderBanner from '../components/slider/sliderBanner/SliderBanner.tsx';
 import SliderCards from '../components/slider/sliderProduct/SliderCard.tsx';
 import BaseBoard from '../components/BaseBoard.tsx';
-
+import { useSelector, } from 'react-redux';
 import banner_1 from '../assets/banner1.svg'
-import pistache from '../assets/Sorvete_pistache.png'
-
-
+import { LayoutContext } from '../context/LayoutContext.tsx';
+import { useContext } from 'react';
 
 
 interface Flavers {
@@ -16,41 +15,27 @@ interface Flavers {
     price: number;
     img: string;
     description: string;
+    id: number;
 }
 
 interface IceCreamTypes {
     type: string;
     flavers: Flavers[];
 }
-function Home({isDesktop, isTablet, isMobile}: any) {
+
+function Home() {
+    const { isDesktop, isTablet, isMobile } = useContext(LayoutContext);
+    const products = useSelector((state: any) => state.product.flaversType);
+    const IceCreemTypes: IceCreamTypes[] = products.map((p: any) => ({type: p.type, flavers: p.flavers}));
     
     const imgBanner = [
             banner_1,
             banner_1,
         ]
 
-    const IceCreemTypes: IceCreamTypes[] = [{
-        type: 'Sabores Classicos',
-        flavers: [
-            {name: 'pistachio', price: 23.00, img: pistache , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'Strawberry', price: 23.00, img: pistache, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'Vanilla', price: 23.00, img: pistache, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'Mint', price: 23.00, img: pistache, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-        ]},
-        {
-        type: 'Sabores Especiais',
-        flavers: [
-            {name: 'Pistache', price: 23.00, img: pistache , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'Strawberry', price: 23.00, img: pistache, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'Vanilla', price: 23.00, img: pistache, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'Mint', price: 23.00, img: pistache, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'favorBomb', price: 23.00, img: pistache , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-            {name: 'Mint', price: 23.00, img: pistache, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
-        ]}
-    ];
     
     return (
-        <div className={'bg-[#F1F1F1]'}>
+        <div className={'bg-[#F1F1F1] h-screen'}>
             <Header  isDesktop={isDesktop} isTablet ={isTablet} isMobile={isMobile}/>
             {isDesktop && <MenuDesktop/>}
             {(isDesktop || isTablet) && <SliderBanner img={imgBanner} isDesktop={isDesktop}/>}

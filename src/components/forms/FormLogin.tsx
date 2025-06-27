@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { type AppDispatch, type RootState } from '../../app/store';
 import { login, ClearError, } from '../../features/auth/authSlice';
-function FormLogin({setIsForm, isTablet}: any) {
+function FormLogin({setIsForm, isTablet, isDesktop}: any) {
     const dispatch = useDispatch<AppDispatch>();
     const error = useSelector((state: RootState) => state.auth.error);
     const isLoggedIn = useSelector((state: RootState) => state.auth.sessionUser.isLogged);
@@ -22,9 +22,9 @@ function FormLogin({setIsForm, isTablet}: any) {
 
     return (
         <form  onSubmit={handlerSubmit}  className={`flex flex-col   gap-y-[20px] ${isTablet && 'pr-[45px]'}`}>
-            <div className='flex flex-col gap-y-[10px] items-center justify-between'>
-                <input type="text" name="email" onChange={handlerChange} placeholder="Email" className='pl-[10px] bg-white rounded-[5px] shadow-lg w-[240px] h-[40px] font-roboto focus:outline-[#0097C4]'></input>
-                <input type="password" name='password'onChange={handlerChange} placeholder="Senha" className='pl-[10px] bg-white rounded-[5px] shadow-lg w-[240px] h-[40px] focus:outline-[#0097C4]'></input>
+            <div className='flex flex-col gap-y-[10px] items-center justify-between '>
+                <input type="text" name="email" onChange={handlerChange} placeholder="Email" className={`pl-[10px] bg-white rounded-[5px] shadow-lg w-[240px] h-[40px] font-roboto  ${isDesktop ? ' outline-[#0097C4]' : 'border-2 border-[#0097C4] outline-none'}`}></input>
+                <input type="password" name='password' onChange={handlerChange} placeholder="Senha" className={`pl-[10px] bg-white rounded-[5px] shadow-lg w-[240px] h-[40px] focus:outline-[#0097C4] ${isDesktop ? ' outline-[#0097C4]' : 'border-2 border-[#0097C4] outline-none'}`}></input>
             </div>
             <p className='text-center text-red-600'>{error}</p>
             <div className={'flex flex-col gap-y-[10px] items-center justify-between text-white font-label'}>

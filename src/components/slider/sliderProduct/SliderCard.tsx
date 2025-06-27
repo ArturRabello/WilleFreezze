@@ -1,13 +1,14 @@
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, } from 'react';
 import ButtonSliderRight from '../ButtonSliderRight.tsx'
 import ButtonSliderLeft from '../ButtonSliderLeft.tsx'
 import CardProduto from './CardProduto.tsx';
 
-import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+
 
 interface sliderCardsProps {
     IceCreemTypes: {
@@ -17,6 +18,7 @@ interface sliderCardsProps {
             price: number;
             img: string;
             description: string;
+            id: number;
         }[];
     };
     isDesktop: any;
@@ -29,11 +31,12 @@ function SliderCards({ IceCreemTypes, isDesktop, isTablet, isMobile}: sliderCard
     const visibleCards = isDesktop ? 4 : 2;
     const swiperRef = useRef<SwiperCore>(null);
 
-    const [swiperKey, setSwiperKey] = useState(0);
+    const [swiperKey, setSwiperKey] = useState(0);  
 
     useEffect(() => {
         setSwiperKey((prevKey) => prevKey + 1);
     }, [isDesktop, isTablet, isMobile]);
+
 
     return (
         <div className={`flex flex-col items-center pb-[20px]`}>
@@ -64,6 +67,7 @@ function SliderCards({ IceCreemTypes, isDesktop, isTablet, isMobile}: sliderCard
                                     price={flavers.price}
                                     img={flavers.img}
                                     description={flavers.description}
+                                    id={flavers.id}
                                 />
                         </SwiperSlide>
                     ))}

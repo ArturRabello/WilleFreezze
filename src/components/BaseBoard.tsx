@@ -5,7 +5,8 @@ import youtube from '../assets/youtube-icon.svg';
 import tikTok from '../assets/tik-tok-icon.svg';
 
 function BaseBoard({isDesktop, isTablet, isMobile}: any){
-    return(<div className={'flex flex-col items-center justify-evenly w-full bg-[#D7F1F9] h-[230px]'}>
+    return(<footer className={'z-index : 0'}>
+        <div className={'flex flex-col items-center justify-evenly w-full bg-[#D7F1F9] h-[230px] mt-auto'}>
             <div className={`flex items-center justify-evenly ${isDesktop ? 'gap-x-[700px]' : isTablet ? 'gap-x-[300px]' : 'gap-x-[20px]'}`}>
                <MainIcon/>
                 <div className={`flex items-center justify-center ${isMobile ? 'gap-x-[12px]' : ' w-[235px] gap-x-[25px]'}`}>
@@ -18,7 +19,9 @@ function BaseBoard({isDesktop, isTablet, isMobile}: any){
                 <p className={'drop-shadow-2xl'}>Wille freezze Serviços de Varejo do Brasil Ltda. | CNPJ XX.XXX.XXX/XXXX-XX</p>
                 <p>Av. dos Mamíferos Gelados, S/N, Polo Leiteiro do Vale Glacê, Peixeboiópolis - SP CEP: 55.505-000</p>
             </div>      
-    </div>);
+    </div>
+    </footer>
+    );
 }
 
 export default BaseBoard;

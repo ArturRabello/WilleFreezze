@@ -1,13 +1,13 @@
 import Header from '../components/Header.tsx';
 import LoginBox from '../components/LoginBox.tsx';
 import Footer from '../components/BaseBoard.tsx';
-function Login({isDesktop, isTablet, isMobile}: any) {
+function Login() {
     return (
-        <>
-            <Header isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
-            <LoginBox isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
-            <Footer isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
-        </>
+        <div className={`flex flex-col justify-between h-screen`}>
+            <Header  />
+            <LoginBox />
+            <Footer  />
+        </div>
     )
 }
 

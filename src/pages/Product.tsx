@@ -4,9 +4,9 @@ import Footer from "../components/BaseBoard"
 
 function Product({isDesktop, isTablet, isMobile}: any) {
     return (
-        <div>
+        <div className="flex flex-col justify-between  h-screen">
             <Header isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
-            <BoxProduto/>
+            <BoxProduto isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
             <Footer isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
         </div>
     )

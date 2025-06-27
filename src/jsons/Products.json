@@ -1,0 +1,132 @@
+[
+    {
+        "type": "Sabores Classicos",
+        "flavers": [
+            {
+                "id": 1,
+                "name": "Pistache",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 2,
+                "name": "Strawberry",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 3,
+                "name": "Vanilla",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 4,
+                "name": "Mint",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 5,
+                "name": "Pistache",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 6,
+                "name": "Strawberry",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 7,
+                "name": "Vanilla",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 8,
+                "name": "Mint",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            }
+        ]
+    },
+    {
+        "type": "Sabores Especiais",
+        "flavers": [
+            {
+                "id": 1,
+                "name": "Pistache",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 2,
+                "name": "Strawberry",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 3,
+                "name": "Vanilla",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 4,
+                "name": "Mint",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 5,
+                "name": "Pistache",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 6,
+                "name": "Strawberry",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            },
+            {
+                "id": 7,
+                "name": "Vanilla",
+                "price": 23.00,
+                "img": "Pistache.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "quantidade": 20
+            }
+        ]
+    }
+]

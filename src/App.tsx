@@ -1,18 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
 import AppRoutes from "./routes/AppRoutes";
-import ReactDOM from "react-dom/client";
-import { Provider } from "react-redux";
-import {store} from "./app/store";
+import { useDispatch } from "react-redux";
+import { loadInitialData } from './features/product/productSlice';
+import {type AppDispatch} from "./app/store";
 import './index.css';
-
-
+import { LayoutProvider} from "./context/LayoutContext";
 
 function App(){
+  const dispatch = useDispatch<AppDispatch>();
+
+
+  
+  useEffect(() => {
+    dispatch(loadInitialData());
+  }, [dispatch]);
+
   return(
     <React.StrictMode>
-      <Provider store={store}>
-        <AppRoutes/>
-      </Provider>
+        <LayoutProvider>
+          <AppRoutes/>
+        </LayoutProvider>
     </React.StrictMode>
   );
 }
