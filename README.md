@@ -1,7 +1,7 @@
 
 <img src="./src/assets/logo.png" alt="Logo" width="350"  />
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/ArturRabello//WilleFreezze?style=for-the-badge) ![Linguagens](https://img.shields.io/github/languages/count/ArturRabello//WilleFreezze?style=for-the-badge&logoWidth=40&labelWidth=100)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/ArturRabello/WilleFreezze?style=for-the-badge) ![Linguagens](https://img.shields.io/github/languages/count/ArturRabello/WilleFreezze?style=for-the-badge&logoWidth=40&labelWidth=100)
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) 
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
