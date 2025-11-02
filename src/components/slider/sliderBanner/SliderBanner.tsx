@@ -3,22 +3,24 @@ import ButtonSliderRight from '../ButtonSliderRight.tsx'
 import ButtonSliderLeft from '../ButtonSliderLeft.tsx'
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import 'swiper/swiper-bundle.css';
 import SwiperCore from 'swiper';
 import { Autoplay } from 'swiper/modules';
 
+//componete de slide de banner
 interface sliderBannerProps{
     img: string[];
-    isDesktop: any;
+    isDesktop: boolean;
 }
 
 function SliderBanner({img, isDesktop}: sliderBannerProps){
     const swiperRef = useRef<SwiperCore>(null);
 
     return(
-        <div className={` ${isDesktop ? 'pt-[40px]' : 'pt-[129px]'} flex items-center justify-center  pb-[40px] `}>
+        <div className={` ${isDesktop && 'pt-[40px]' } flex items-center justify-center  pb-[40px] `}>
             <div className={` flex items-center relative ${isDesktop ? 'w-[1082px] h-[502px]  rounded-[12px]' : 'w-[768px] h-[402px]'}  overflow-hidden shadow-['0px 4px 4px rgba(0, 0, 0, 0.25)']`}
              style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}}> 
+             {/* imagem do slide */}
              <Swiper
                 modules={[Autoplay]}
                 onSwiper={(swiper) => {
@@ -41,6 +43,7 @@ function SliderBanner({img, isDesktop}: sliderBannerProps){
                     </SwiperSlide>
                 ))}
              </Swiper>
+             {/* botoes do slide */}
                 <ButtonSliderRight swiperRef={swiperRef}/>
                 <ButtonSliderLeft  swiperRef={swiperRef}/>
             </div>

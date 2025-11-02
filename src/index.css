@@ -1,1 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap');
 @import "tailwindcss";
+
+@layer utilities {
+  .scrollbar-custom {
+    scrollbar-width: thin;  /* Firefox */
+    scrollbar-color: #0097C4 transparent; /* thumb cor clara, track mais clara */
+  }
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 6px; /* barra bem fina */
+    height: 6px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent; /* fundo muito claro */
+    border-radius: 10px; /* cantos arredondados */
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #0097C4; /* thumb mais escuro */
+    border-radius: 10px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #b0b0b0; /* um pouco mais escuro no hover */
+  }
+  .font-Poppins-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  .font-Inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+}

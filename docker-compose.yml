@@ -1,0 +1,14 @@
+version: "3.9"
+#arquivo de orquestração do docker
+services:
+  #nome do servico
+  web:
+    # controi a imagem apartir do dockerfile '. = diretorio atual'
+    build: .
+    container_name: WilleFreeze
+    #mapeamento da porta entre a máquina host e o container
+    #container: Nginx escuta porta 80, fora do containeir? você acessa pela porta 8080
+    ports:
+      - "8080:80"
+    #reinicia o container caso ele fique parado ou qualquer outro motivo de erro
+    restart: always

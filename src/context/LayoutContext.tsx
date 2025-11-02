@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
 import { useMediaQuery } from "react-responsive";
 
-
+// Definição dos estados globais de layout
 
 interface LayoutContextInterface {
     isDesktop: boolean;

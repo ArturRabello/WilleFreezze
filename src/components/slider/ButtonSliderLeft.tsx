@@ -1,5 +1,6 @@
 import btnLeft from '../../assets/btnLeft.svg';
 
+// botão de avançar do avançar
 interface ButtonSlideLeftProps {
   swiperRef: any
 }

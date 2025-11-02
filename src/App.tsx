@@ -1,26 +1,26 @@
-import React, {useEffect} from "react";
+import React from "react";
 import AppRoutes from "./routes/AppRoutes";
-import { useDispatch } from "react-redux";
-import { loadInitialData } from './features/product/productSlice';
-import {type AppDispatch} from "./app/store";
 import './index.css';
 import { LayoutProvider} from "./context/LayoutContext";
+import { SearchProvider } from "./context/SearchContext";
+import { ImageProvider} from "./context/image/ImageContext";   
 
+
+//Provieder e routes
 function App(){
-  const dispatch = useDispatch<AppDispatch>();
-
-
-  
-  useEffect(() => {
-    dispatch(loadInitialData());
-  }, [dispatch]);
-
   return(
-    <React.StrictMode>
+    <div className="">
+      <React.StrictMode>
         <LayoutProvider>
-          <AppRoutes/>
+          <ImageProvider>
+          <SearchProvider>
+            <AppRoutes/>
+          </SearchProvider>
+          </ImageProvider>
         </LayoutProvider>
     </React.StrictMode>
+    </div>
+    
   );
 }
 

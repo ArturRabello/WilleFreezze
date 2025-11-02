@@ -1,5 +1,6 @@
 import btnRight from '../../assets/btnRight.svg';
 
+// botão de retornar
 interface ButtonSlideRightProps {
   swiperRef:any;
 }

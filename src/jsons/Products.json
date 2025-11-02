@@ -1,132 +1,156 @@
 [
-    {
-        "type": "Sabores Classicos",
-        "flavers": [
-            {
-                "id": 1,
-                "name": "Pistache",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 2,
-                "name": "Strawberry",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 3,
-                "name": "Vanilla",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 4,
-                "name": "Mint",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 5,
-                "name": "Pistache",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 6,
-                "name": "Strawberry",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 7,
-                "name": "Vanilla",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 8,
-                "name": "Mint",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            }
-        ]
-    },
-    {
-        "type": "Sabores Especiais",
-        "flavers": [
-            {
-                "id": 1,
-                "name": "Pistache",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 2,
-                "name": "Strawberry",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 3,
-                "name": "Vanilla",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 4,
-                "name": "Mint",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 5,
-                "name": "Pistache",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 6,
-                "name": "Strawberry",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            },
-            {
-                "id": 7,
-                "name": "Vanilla",
-                "price": 23.00,
-                "img": "Pistache.png",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "quantidade": 20
-            }
-        ]
-    }
+  {
+    "type": "Sabores Clássicos",
+    "flavers": [
+      {
+        "id": "1",
+        "name": "Fior di Latte",
+        "price": 23.00,
+        "img": "../imgFlavers/FiorDiLatte.png",
+        "description": "O gelato italiano por excelência. Creme puro e delicado, feito com leite fresco e uma pitada de baunilha. A base perfeita que revela a verdadeira essência do gelato artesanal.",
+        "quantidade": 20
+      },
+      {
+        "id": "2",
+        "name": "Pistache",
+        "price": 23.00,
+        "img": "../imgFlavers/Pistache.png",
+        "description": "Cremoso e intenso, feito com pistaches selecionados. Sabor marcante e textura aveludada que conquistam no primeiro contato.",
+        "quantidade": 20
+      },
+      {
+        "id": "3",
+        "name": "Chocolate",
+        "price": 23.00,
+        "img": "../imgFlavers/Chocolate.png",
+        "description": "Gelato rico e intenso, preparado com cacau nobre de alta qualidade. Para os verdadeiros amantes de chocolate que buscam sabor autêntico e marcante.",
+        "quantidade": 20
+      },
+      {
+        "id": "4",
+        "name": "Stracciatella",
+        "price": 23.00,
+        "img": "../imgFlavers/Stracciatella.png",
+        "description": "Clássico italiano: creme Fior di Latte com lascas crocantes de chocolate belga. A combinação perfeita entre suavidade e textura.",
+        "quantidade": 20
+      },
+      {
+        "id": "5",
+        "name": "Nocciola (Avelã)",
+        "price": 23.00,
+        "img": "../imgFlavers/Nocciola.png",
+        "description": "Gelato cremoso com avelãs torradas do Piemonte. Sabor profundo e envolvente que remete às tradições italianas.",
+        "quantidade": 20
+      },
+      {
+        "id": "6",
+        "name": "Morango",
+        "price": 23.00,
+        "img": "../imgFlavers/Morango.png",
+        "description": "Feito com morangos frescos e maduros, preservando toda a doçura e acidez natural da fruta. Refrescante e genuíno.",
+        "quantidade": 20
+      },
+      {
+        "id": "7",
+        "name": "Baunilha",
+        "price": 23.00,
+        "img": "../imgFlavers/Baunilha.png",
+        "description": "Gelato cremoso com favas de baunilha bourbon autêntica. Clássico atemporal com sabor rico e aromático.",
+        "quantidade": 20
+      },
+      {
+        "id": "8",
+        "name": "Café/Espresso",
+        "price": 23.00,
+        "img": "../imgFlavers/Cafe-Espresso.png",
+        "description": "Intenso como um espresso italiano. Feito com café selecionado, equilibrando amargor e doçura na medida certa.",
+        "quantidade": 20
+      },
+      {
+        "id": "9",
+        "name": "Limão Siciliano",
+        "price": 23.00,
+        "img": "../imgFlavers/Limão-Siciliano.png",
+        "description": "Refrescante e vibrante, preparado com limões sicilianos. Acidez equilibrada e aroma cítrico que limpa o paladar.",
+        "quantidade": 20
+      },
+      {
+        "id": "10",
+        "name": "Amarena",
+        "price": 23.00,
+        "img": "../imgFlavers/Amarena.png",
+        "description": "Creme suave com cerejas amarena italianas em calda. Combinação sofisticada entre doce e levemente ácido.",
+        "quantidade": 20
+      }
+    ]
+  },
+  {
+    "type": "Sabores Especiais",
+    "flavers": [
+      {
+        "id": "11",
+        "name": "Menta com Chocolate",
+        "price": 25.00,
+        "img": "../imgFlavers/Menta-Com-Chocolate.png",
+        "description": "Gelato refrescante de menta natural com lascas de chocolate meio amargo. Explosão de frescor e intensidade.",
+        "quantidade": 15
+      },
+      {
+        "id": "12",
+        "name": "Coco Tropical",
+        "price": 25.00,
+        "img": "../imgFlavers/Coco-Tropical.png",
+        "description": "Cremoso e exótico, feito com polpa de coco fresco. Textura aveludada que transporta para o paraíso tropical.",
+        "quantidade": 15
+      },
+      {
+        "id": "13",
+        "name": "Gengibre com Limão",
+        "price": 25.00,
+        "img": "../imgFlavers/Gengibre-Com-Limão.png",
+        "description": "Sabor autoral e surpreendente: gengibre fresco com toque cítrico. Refrescante, levemente picante e viciante.",
+        "quantidade": 15
+      },
+      {
+        "id": "14",
+        "name": "Doce de Leite Argentino",
+        "price": 25.00,
+        "img": "../imgFlavers/Doce-De-Leite-Argentino.png",
+        "description": "Cremoso e irresistível, preparado com doce de leite artesanal. Sabor intenso que derrete na boca.",
+        "quantidade": 15
+      },
+      {
+        "id": "15",
+        "name": "Tiramisù",
+        "price": 25.00,
+        "img": "../imgFlavers/Tiramisù.png",
+        "description": "Inspirado na sobremesa italiana clássica: creme mascarpone, café e cacau. Sofisticação em cada colherada.",
+        "quantidade": 15
+      },
+      {
+        "id": "16",
+        "name": "Frutas Vermelhas",
+        "price": 25.00,
+        "img": "../imgFlavers/Frutas-Vermelhas.png",
+        "description": "Mix vibrante de framboesas, amoras e mirtilos frescos. Explosão de sabor e cor em cada porção.",
+        "quantidade": 15
+      },
+      {
+        "id": "17",
+        "name": "Brigadeiro Gourmet",
+        "price": 25.00,
+        "img": "../imgFlavers/Brigadeiro-Gourmet.png",
+        "description": "O clássico brasileiro em versão gelato: chocolate cremoso com leite condensado. Nostalgia e sofisticação juntas.",
+        "quantidade": 15
+      },
+      {
+        "id": "18",
+        "name": "Caramelo Salgado",
+        "price": 25.00,
+        "img": "../imgFlavers/Caramelo-Salgado.png",
+        "description": "Equilíbrio perfeito entre doce e salgado. Caramelo artesanal com flor de sal, criando contraste irresistível.",
+        "quantidade": 15
+      }
+    ]
+  }
 ]

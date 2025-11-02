@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "fullName": "admin",
+            "email": "admin.gmail.com",
+            "password": "123456789",
+            "confirmPassword": "123456789",
+            "dateOfBirth": "01/01/2000",
+            "cpf": "484.269.758-01",
+            "role": "admin"
+        }
+    ]
+}
