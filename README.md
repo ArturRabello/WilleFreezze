@@ -51,6 +51,15 @@ A aplicação desenvolvida — Wille Freeze — representa o funcionamento de um
 ### 👥 Controle de Usuarios
 ![alt text](./src/assets/printScreen/usersController.png)
 
+## 🧑‍💼Login Admin
+- **Login do administrador**
+```
+    Email: admin.gmail.com
+    Password: 12345678 
+```
+
+
+
 
 ## 🔗 APIs
 Para o funcionamento da aplicação, são utilizados os seguintes serviços:
