@@ -55,11 +55,8 @@ A aplicação desenvolvida — Wille Freeze — representa o funcionamento de um
 - **Login do administrador**
 ```
     Email: admin.gmail.com
-    Password: 12345678 
+    Password: 123456789
 ```
-
-
-
 
 ## 🔗 APIs
 Para o funcionamento da aplicação, são utilizados os seguintes serviços:
