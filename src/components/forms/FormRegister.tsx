@@ -45,7 +45,7 @@ function FormRegister({ handleNavegation, setIsForm, isMobile, isDesktop }: any)
         };
 
     return (
-        <form onSubmit={handlerSubmit} className={`flex ${isMobile && 'justify-center pt-[50px] pb-[50px]'} flex-col gap-y-[20px] font-Inter-regular`}>
+        <form onSubmit={handlerSubmit} className={`flex ${isMobile && 'justify-center p-y-[120px]' } flex-col gap-y-[20px] font-Inter-regular`}>
             {/* inputs do formulário */}
             <div className={`flex ${isMobile ? 'flex-col gap-y-[20px]' : 'flex-row gap-x-[20px]'}`}>
                 <input name = "email" onChange={handlerChange} type="text" placeholder="Email" className={` pl-20px pl-[10px] bg-white rounded-[5px] shadow-lg w-[240px] h-[40px]   ${isDesktop ? ' outline-[#0097C4]' : 'border-2 border-[#0097C4] outline-none'}`}/>
@@ -60,7 +60,7 @@ function FormRegister({ handleNavegation, setIsForm, isMobile, isDesktop }: any)
                 <input type="password" name = "confirmPassword" onChange={handlerChange} placeholder="Confirmar Senha" className={`pl-20px pl-[10px] bg-white rounded-[5px] shadow-lg w-[240px] h-[40px] ${isDesktop ? ' outline-[#0097C4]' : 'border-2 border-[#0097C4] outline-none'}`}/>
             </div>
             {/* mensagem de erro */}
-            <div className='flex flex-row justify-center'><p className=" word-wrap text-red-600">{error}</p></div>
+            <div className='flex flex-row justify-center '><p className={`word-wrap breack-words text-red-600 ${isDesktop ? 'max-w-[400px]' : 'max-w-[200px]'}`}>{error}</p></div>
             {/* botões do formulário */}
             <div className={`flex ${isMobile ? 'flex-col gap-y-[10px]' : 'flex-row gap-x-[20px] pb-[20px]'} pt-[20px] items-center justify-evenly text-white font-label`}>
                 <button type="button" onClick={() => (setIsForm('login'), dispatch(ClearError()))} className="bg-[#0097C4] rounded-[25px] shadow-lg w-[180px] h-[45px] hover:scale-104">Login</button>

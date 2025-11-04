@@ -21,7 +21,7 @@ function LoginBox()
 
     return (
     <div className={`flex items-center justify-center ${isDesktop && 'pt-[40px] pb-[60px]'}`}>
-        <div className={`flex items-center justify-center w-[956px] h-[524px]  rounded-[12px] ${(isform === 'login' ? ' gap-x-[130px]' : 'gap-x-[40px]')} ${isDesktop && 'shadow-lg bg-[#D7F1F9]'}`}>
+        <div className={`flex items-center justify-center w-[956px] ${isMobile && isform === 'register' ? 'min-h-[524px] max-h-[588px] py-[20px]' : 'h-[524px]'}  rounded-[12px] ${(isform === 'login' ? ' gap-x-[130px]' : 'gap-x-[40px]')} ${isDesktop && 'shadow-lg bg-[#D7F1F9]'}`}>
             {(isDesktop || (isTablet  && isform === 'login')) && <img src={Logo} alt="Logo" className={'w-[330px] h-[320px] drop-shadow-lg'}></img>}
             {/* formulario definido de acordo com o estado */}
             {isform === 'login' ? <FormLogin handleNavegation={handleNavegation} setIsForm={setIsForm} isTablet={isTablet} isDesktop={isDesktop}/> : <FormRegister handleNavegation={handleNavegation} setIsForm={setIsForm} isMobile={isMobile} isDesktop={isDesktop}/>}
