@@ -35,7 +35,7 @@ function UsersView({filteredUsers}: {filteredUsers?: User[]}) {
     
     return (
         <div className={`flex flex-col items-center pb-[50px] h-[500px] gap-y-[20px]  ${isMobile || isTablet ? 'pt-[50px]' : 'pt-[50px]'}`}>
-            {!filteredUsers && <h1 className="text-[32px] font-Poppins-bold">Usuarios</h1>}
+            {!filteredUsers && <h1 className="text-[32px] font-Poppins-bold">Usuários</h1>}
             <UserList handlerRemoveUser={handlerRemoveUser} handlerChangeStatus={handlerChangeStatus}/>
         </div>
     );
