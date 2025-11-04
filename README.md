@@ -25,6 +25,7 @@ Durante o desenvolvimento, foi possível aprimorar habilidades relacionadas às 
 A aplicação desenvolvida — Wille Freeze — representa o funcionamento de uma loja de gelatos artesanais, permitindo a interação entre usuários e administradores em um ambiente totalmente simulado no navegador. Por meio dessa experiência, foi possível reforçar conhecimentos sobre organização de componentes, gerenciamento de estados e boas práticas de desenvolvimento front-end, consolidando uma base sólida para projetos futuros.
 
 ## 🖥️ Interface
+
 ### 🔑 Login
 ![pagina de Login](./src/assets/printScreen/login.png)
 ![pagina de Registro](./src/assets/printScreen/register.png)
@@ -51,6 +52,11 @@ A aplicação desenvolvida — Wille Freeze — representa o funcionamento de um
 ### 👥 Controle de Usuarios
 ![alt text](./src/assets/printScreen/usersController.png)
 
+## 📐 Design Figma
+Concept inicial do projeto feito no figma, durante o desenvolvimento foram alterados e adicionados alguns componentes e elementos
+
+- **[Figma](https://www.figma.com/design/PPTDyTZYnMdEiMaA6zIrII/MVP-2--2025?node-id=0-1&p=f&t=qVfeb44L4bTmmLvv-0)**
+
 ## 🧑‍💼Login Admin
 - **Login do administrador**
 ```
@@ -63,9 +69,7 @@ Para o funcionamento da aplicação, são utilizados os seguintes serviços:
 
 - **[BrasilApi](https://brasilapi.com.br/)** → responsável pela autenticação e validação do CEP. 
 
-
-
-## 🚀 Tecnologias
+## 🚀 Tecnologia
 
 - **React JS** (construído com Vite)
 - **Redux Tool Kit**
@@ -80,12 +84,12 @@ Para o funcionamento da aplicação, são utilizados os seguintes serviços:
 
 ## 🛠️ Como utilizar 
 
-### 2️⃣Clone o repositório:
+### 1️⃣ Clone o repositório:
 ```bash
 git clone https://github.com/ArturRabello/WilleFreezze-.git
 ```
 
-### 4️⃣ Executar localmente com NPM
+### 2️⃣ Executar localmente com NPM
 
 **Instalar as dependencias**
 ```bash
@@ -96,7 +100,7 @@ npm install
 npm run dev
 ```
 
-### 5️⃣ Execute em um container Docker
+### 3️⃣ Execute em um container Docker
 **Será necessario que você tenha o Docker Desktop instalado em sua maquina.**
 - [Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
 - [Linux](https://docs.docker.com/desktop/setup/install/linux/)
@@ -215,7 +219,85 @@ Essa funcionalidade tem caráter apenas demonstrativo, sem implementação de au
 
 - **👤 UserController**: O administrador tem acesso a funcionalidades de gestão de usuários, podendo excluir contas ou promover usuários comuns a administradores, facilitando a administração do sistema e o controle de permissões.
 
-- **🛒 ProductController**: o administrador tem acesso a todas as funcionalidades de gestão de produtos, incluindo inclusão de novos itens, atualização de preços e estoque e exclusão de produtos, mantendo o catálogo sempre atualizado e organizado.
+- **🛒 ProductController**: O administrador tem acesso a todas as funcionalidades de gestão de produtos, incluindo inclusão de novos itens, atualização de preços e estoque e exclusão de produtos, mantendo o catálogo sempre atualizado e organizado.
+
+## 💾 Estrutura dos dados em cache
+
+### 🗃️ LocalStorage
+
+- #### 👥 Users
+
+    | Parâmetros|Tipo    |Descrição                |
+    |-----------|--------|-------------------------|
+    |id         |string or int | Id do usuário |
+    |fullName   |string  | Nome completo do usuário|
+    |password   |string  | Senha de acesso da conta|
+    |confirmPassword|string| Senha de confimação do registro|
+    |cpf        |string  | CPF do usuário          |
+    |dateOfBirth|string  | Data de nascimento      |
+    |Role       | string | papel da conta  (**user ou admin**)|
+
+
+ - #### 🧍‍♂️ Current User
+
+    | Parâmetros|Tipo    |Descrição                |
+    |-----------|--------|-------------------------|
+    |id         |string or int  | Id do usuário    |
+    |fullName   |string  | Nome completo do usuário|
+    |password   |string  | Senha de acesso da conta|
+    |cpf        |string  | CPF do usuário          |
+    |dateOfBirth|string  | Data de nascimento      |
+    |Role       | string | papel da conta  (**user ou admin**)|
+
+- #### 🔐 IsLogged
+
+    | Parâmetros|Tipo    |Descrição|
+    |-----------|--------|---------|
+    |Type       | string | Verifica se tem conta logada|
+
+- #### 🍨 Products
+
+    | Parâmetros|Tipo    |Descrição             |
+    |-----------|--------|----------------------|
+    |flavers    |flavers | Sabores de sorvete  |
+    |type       |string  | categorização dos produtos|
+
+    - **🍦 Flavers**
+
+        | Parâmetros|Tipo    |Descrição                  |
+        |-----------|--------|---------------------------|
+        |id         |int     | Id do sabor               |
+        |name       |string  | Nome do sabor             |
+        |price      |string  | Preço do sabor            |
+        |quantidade |string  | Quantidade no estoque     |
+        |description|string  | Descrição do sabor        |
+        |img        |string  | Url da imagem             |
+
+- #### 🛒 Basket
+
+    | Parâmetros|Tipo    |Descrição                |
+    |-----------|--------|-------------------------|
+    |products   |products| Produtos adicionados    |
+    |total      |number  | Valor total dos produtos|
+    |userId     |string or int| Id do usuário   |
+
+- #### 🧾 Purchases
+
+    | Parâmetros|Tipo    |Descrição                |
+    |-----------|--------|-------------------------|
+    |products   |products| Produtos adicionados    |
+    |total      |number  | Valor total dos produtos|
+    |userId     |string or int| Id do usuário      |
+
+### 🗃️ IndexDB
+
+- #### 🖼️ UserImages
+    | Parâmetros|Tipo    |Descrição                |
+    |-----------|--------|-------------------------|
+    |key        |string  | chave de acesso a imagem|
+    |Value      |string  | valor da imagem convertida na base64 |
+
+
 
 ## 📂 Estrutra do projeto
 
